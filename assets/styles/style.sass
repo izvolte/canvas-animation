@@ -1,0 +1,120 @@
+@charset "UTF-8"
+
+*
+  margin: unset
+  padding: unset
+  box-sizing: border-box
+  margin-block-start: unset
+  margin-block-end: unset
+
+html,
+body
+  height: 100%
+
+body
+  position: relative
+  background-color: #000000
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.content
+  flex: 1 0 auto
+  overflow: hidden
+  position: relative
+
+.footer
+  flex: 0 0 auto
+
+.ul
+  list-style-type: none
+
+a
+  text-decoration: none
+
+a:-webkit-any-link
+  color: unset
+
+iframe
+  border: none
+
+
+body
+  margin: 0
+  position: relative
+  overflow-x: hidden
+  font-family: Rubik
+
+.decoration
+  position: absolute
+  opacity: 0
+  z-index: -100
+
+.bg
+  &__end
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100vw
+    height: 106.5104vw
+    background: url("../img/background.png") center no-repeat
+    background-size: cover
+    @media only screen and (max-width: 700px)
+      display: none
+
+
+.start
+  width: 100vw
+  height: 50.4688vw
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url('../img/bg.jpg') center no-repeat
+  background-size: 100% 100%
+  min-height: 100vh
+  @media only screen and (max-width: 700px)
+    height: 179.2000vw
+    background: url('../img/bg-mob.jpg') center no-repeat
+    background-size: cover
+  &__name
+    color: #ffffff
+    font-family: "Rubik Medium"
+    font-size: 7.6042vw
+    font-weight: 500
+    text-transform: uppercase
+    pointer-events: none
+    @media only screen and (max-width: 700px)
+      font-size: 19.4667vw
+  &__class
+    color: #ffffff
+    font-family: "Rubik Medium"
+    font-size: 1.5625vw
+    font-weight: 500
+    text-transform: uppercase
+    margin-bottom: 1.5625vw
+    pointer-events: none
+    @media only screen and (max-width: 700px)
+      font-size: 4.0000vw
+      margin-top: -1.3333vw
+      margin-bottom: 5.6000vw
+  &__canvas
+    width: 100vw
+    height: 62.5000vw
+    position: absolute
+    left: 0
+    top: 0
+    @media only screen and (max-width: 700px)
+      display: none
+  &__wrap
+    position: relative
+    text-align: center
+    z-index: 1
+  &__button
+    margin: 0 auto
+
+
+.note
+  width: 5vw
